@@ -31,3 +31,9 @@ cd.launch(startTime)
 ```
 
 => Pro(o)fit.
+
+License
+-------
+
+CC by-nc-sa (http://creativecommons.org/licenses/by-nc-sa/2.0/) 
+So yes, you simple user can use it, you nice coder can alter it... but companies are not even welcome to pay me for it, go let your developers code their own modules, they'll love you.
