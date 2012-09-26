@@ -116,23 +116,24 @@
     <script src="../leCountdown.js" type="text/javascript"></script>
     <script>
         // some data manipulation
-        var now = +(new Date()),
-            date = [];
+        var now = +(new Date()), date = [];
 
-        date[0] = +(new Date(now + 120)),
-        date[1] = +(new Date(now + 10)),
-        date[2] = +(new Date(now + 240)),
-        date[3] = +(new Date(now + 40));
+        // fill some dates
+        date[0] = +(new Date(now + 120))
+        date[1] = +(new Date(now + 10))
+        date[2] = +(new Date(now + 240))
+        date[3] = +(new Date(now + 40))
 
         // countdown related code
         var callback = function(el) {
+                // loop on elements
                 for (var k in el) {
                     el[k].className += " animation";
                 }
                 console.log("countdown is over, go back home now")
             }, 
             countdown = new LeCountdown(),
-            group = [];
+            group = []
 
         for (var i=0;i<4;i++) {
             countdown.create(date[i],callback)(document.getElementById(["countdown-",i+1].join("")))
