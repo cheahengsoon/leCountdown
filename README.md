@@ -7,20 +7,27 @@ It's just a proof of concept, having one setTimeout every 1s only, for controlli
 How to use
 ----------
 
+```js
 var cd = new leCountdown();
-
+```
 => Will create a new countdown, return this.
 
+```js
 var group = cd.create(endTime,callback) // endTime is an UNIX timestamp, callback is.. obviously a function
+```
 
 => Will create a group, returns a function for adding elements
 
+```js
 group(DOMEl) // libraries user are invited to learn how to get the DOM element :)
 group(DOMEl2)
 group(DOMEl3)
+```
 
 => add elements to the group
 
+```js
 cd.launch(startTime) 
+```
 
 => Pro(o)fit.
